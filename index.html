@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meals</title>
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Font Awesome-->
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Bootstrap -->
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Style CSS -->
+
+</head>
+
+<body class=" bg-black ">
+    <section id="gamesLoader"
+        class="  vh-100 justify-content-center align-items-center position-fixed top-0 bottom-0 start-0 end-0 ">
+        <span class="loader "></span>
+    </section>
+
+    <nav class="side-nav vh-100 d-flex position-fixed top-0 start-0 bottom-0 ">
+        <div class="collapsed-nav bg-black px-2 py-4 d-flex flex-column justify-content-between h-100 px-4 ">
+            <div class="top-items overflow-hidden">
+                <div class="inner d-flex flex-column justify-content-between align-content-start ">
+                    <a href="#" class="text-decoration-none text-white my-2 a1 spot" id="Search">Search</a>
+                    <a href="#" class="text-decoration-none text-white my-2 a2 spot" id="Categories">Categories</a>
+                    <a href="#" class="text-decoration-none text-white my-2 a3 spot" id="Area">Area</a>
+                    <a href="#" class="text-decoration-none text-white my-2 a4 spot" id="Ingredients">Ingredients</a>
+                    <a href="#" class="text-decoration-none text-white my-2 a5 spot" id="ContactUs">Contact Us</a>
+                </div>
+            </div>
+            <div class="bottom-items d-flex flex-column justify-content-between">
+                <div class="icons text-white">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter mx-2"></i>
+                    <i class="fa-solid fa-globe mb-1"></i>
+                </div>
+                <p class="text-white">Copyright Baher Dagher © 2024</p>
+            </div>
+        </div>
+        <div class="main-nav bg-white px-2 py-4 d-flex flex-column justify-content-between align-items-center h-100 ">
+            <a href="" class="text-decoration-none"><img src="images/logo.png" alt=""></a>
+            <div class="middle-icon">
+                <a href="#" class="text-decoration-none text-black bars-link"><i class="fa-solid fa-bars fs-2 "></i></a>
+                <a href="#" class="text-decoration-none text-black x-link d-none"><i
+                        class="fa-solid fa-xmark fs-1"></i></a>
+            </div>
+            <div class="bottom-icons d-flex flex-column align-items-center">
+                <i class="fa-solid fa-globe mb-1"></i>
+                <i class="fa-solid fa-share-nodes"></i>
+            </div>
+        </div>
+
+    </nav>
+
+    <section class="first-section text-center ">
+
+        <div class="container my-5 mx-auto ">
+            <div class="row g-4 meals-row mx-auto  justify-content-center justify-content-md-start ">
+
+            </div>
+        </div>
+    </section>
+
+    <section class="search d-none text-center">
+        <div class="container my-5 mx-auto ">
+            <form action="">
+                <div class="row mx-auto justify-content-center">
+                    <div class="col-md-6 col-9">
+                        <div class="mb-3 ">
+                            <input type="text" class="form-control bg-transparent text-white" id="nameInput"
+                                placeholder="Search By Name">
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-9">
+                        <div class="mb-3">
+                            <input type="text" class="form-control bg-transparent text-white" id="letterInput"
+                                placeholder="Search By First Letter">
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+            <div class="row g-4 searchedMeals-row  justify-content-center justify-content-md-start">
+
+            </div>
+        </div>
+    </section>
+
+    <section class="categories d-none text-center">
+        <div class="container my-5 mx-auto">
+            <div class="row g-4 categoryMeals-row mx-auto  justify-content-center justify-content-md-start">
+
+            </div>
+        </div>
+    </section>
+
+    <section class="area d-none text-center">
+        <div class="container my-5 text-center mx-auto">
+            <div class="row g-4 areaMeals-row mx-auto  justify-content-center justify-content-md-start">
+
+            </div>
+        </div>
+    </section>
+
+    <section class="ingredients d-none text-center">
+        <div class="container my-5 text-center mx-auto">
+            <div class="row g-4 ingredientsMeals-row mx-auto  justify-content-center justify-content-md-start">
+
+            </div>
+        </div>
+    </section>
+
+    <section class="meal-details d-none">
+        <div class="container m-5  mx-auto">
+            <div class="row g-4 meal-detailsRow  justify-content-center justify-content-md-start">
+
+            </div>
+        </div>
+    </section>
+
+    <section class="selected-categouryMeals d-none text-center">
+        <div class="container m-5  mx-auto">
+            <div class="row selected-categouryMealsRow g-4  justify-content-center justify-content-md-start">
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="selected-areaMeals d-none text-center">
+        <div class="container m-5  mx-auto">
+            <div class="row selected-areaMealsRow g-4  justify-content-center justify-content-md-start">
+
+            </div>
+        </div>
+    </section>
+
+    <section class="selected-ingredientMeals d-none text-center">
+        <div class="container m-5  mx-auto">
+            <div class="row selected-ingredientMealsRow g-4  justify-content-center justify-content-md-start">
+
+            </div>
+        </div>
+    </section>
+    <section class="contact-us d-flex justify-content-center  align-items-center vh-100 d-none text-center">
+        <div class="container m-5 ">
+            <form action="" id="contactForm">
+                <div class="row mx-auto justify-content-center align-content-center">
+                    <div class="col-md-5">
+                        <div class="mb-4 ">
+                            <input type="text" class="form-control bg-white text-black " id="usernameInput"
+                                placeholder="Enter Your Name">
+                            <span class="text-danger d-none ">Minimum 3 Characters & Must Start with Char</span>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="mb-4">
+                            <input type="text" class="form-control bg-white text-black" id="emailInput"
+                                placeholder="Enter Your Email">
+                            <span class="text-danger d-none">Email is invalid</span>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="mb-4 ">
+                            <input type="text" class="form-control bg-white text-black" id="phoneInput"
+                                placeholder="Enter Your Phone">
+                            <span class="text-danger d-none">Phone is invalid</span>
+
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="mb-4">
+                            <input type="text" class="form-control bg-white text-black" id="ageInput"
+                                placeholder="Enter Your Age">
+                            <span class="text-danger d-none">Age is invalid </span>
+
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="mb-4 ">
+                            <input type="text" class="form-control bg-white text-black" id="passwordInput"
+                                placeholder="Enter Your Password">
+                            <span class="text-danger d-none">Minimum 4 characters, at least one upper case one lower
+                                case , one
+                                number and one special character</span>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="mb-4">
+                            <input type="text" class="form-control bg-white text-black" id="repasswordInput"
+                                placeholder="Repassword">
+                            <span class="text-danger d-none">Passwords Doesn't Match</span>
+                        </div>
+                    </div>
+                    <div class="col-md-12 text-center">
+                        <button type="submit" class="btn btn-danger" id="submitBtn" disabled>Submit</button>
+                    </div>
+                    <div id="submit"
+                        class="d-none rounded-4  success-adding pb-3 position-fixed z-3 d-flex justify-content-center align-content-center flex-column text-center  ">
+                        <img src="images/success.png" alt="" class="img-fluid mx-auto suceess">
+                        <h2 class="fw-normal">Thank You!</h2>
+                        <p>Submit Success!</p>
+                        <button type="button" class="mx-auto btn text-bg-success  " id="submitOK">OK</button>
+                    </div>
+
+                </div>
+
+            </form>
+        </div>
+        </div>
+    </section>
+    <!-- JS Linking -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="js/index.js"></script>
+    <!-- JS Linking -->
+
+</body>
+
+</html>
