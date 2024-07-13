@@ -25,13 +25,13 @@ export class Details {
         }
 
         let bBox = `
-                <div class="col-md-4 ">
+                <div class="col-md-4 col-9 ms-5 ms-md-0">
                     <div class="left text-center">
                         <img src="${meal.strMealThumb} " class="rounded-3 img-fluid" alt="">
                         <h2 class="text-white fw-medium mt-3">${meal.strMeal}</h1>
                     </div>
                 </div>
-                <div class="col-md-8 text-white">
+                <div class="col-md-8 text-white col-9 ms-5 ms-md-0">
                     <h2 class="fw-bold">Instructions</h2>
                     <p>${meal.strInstructions}</p>
                     <h3><span class="fw-bold">Area : </span>${meal.strArea}</h3>
